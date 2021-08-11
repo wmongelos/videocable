@@ -173,7 +173,7 @@ namespace CapaNegocios.Mapas
                     Localidad = Convert.ToString(dr["localidad"]).Replace(" ", "+");
                     if (Convert.ToString(dr["lat"], System.Globalization.CultureInfo.InvariantCulture) == "0")
                     {
-                        var url1 = "https://maps.googleapis.com/maps/api/geocode/json?address=" + Altura + "+Calle+" + Calle + ",+" + Localidad + ",+Argentina&key=AIzaSyAgkK5ZGD1RWtdJG-U5JyHju9dcBE2EfFs";
+                        var url1 = "https://maps.googleapis.com/maps/api/geocode/json?address=" + Altura + "+Calle+" + Calle + ",+" + Localidad + ",+Argentina&key=";
                         var datos = wc.DownloadString(url1);
                         var resultado = JsonConvert.DeserializeObject<Root>(datos);
                         foreach (var coord in resultado.results)
