@@ -1,8 +1,6 @@
-# VideoCable
-Gies - Gestion Integral para Empresas de Servicios
+## Management Software for Telecommunications Companies
 
-Conector Mysql
-http://www.wamarpe.com.ar/DEMO/Conector.msi
-
-Cristal Reports para Visual Studio
-http://www.wamarpe.com.ar/DEMO/CRforVS13SP25.EXE
+#### Visual Studio 2019
+#### Languaje C#
+#### Mysql Database
+#### Crystal Reports
