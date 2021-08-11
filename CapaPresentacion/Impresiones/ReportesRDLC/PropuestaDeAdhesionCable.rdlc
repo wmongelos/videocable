@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>PROPUESTA DE ADHESION AL SISTEMA DE T.V. POR CABLE  </Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.7112cm</Top>
+        <Left>0.81703cm</Left>
+        <Height>0.78521cm</Height>
+        <Width>19.38042cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ATCCO  S.R.L., en adelante denominada “ La Empresa” brindará a sus abonados, en adelante denominados “Usuarios”, un servicio de circuito cerrado de Televisión, a emitirse desde su Planta de la ciudad de San Clemente del Tuyú, que será Privado, Exclusivo y Común a los abonados al Sistema.
+*Esta propuesta de adhesión es intransferible.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>
+**El servicio comprende la instalación de una boca de conexión en el lugar indicado por el abonado. La instalación de una o más bocas de conexión extra, serán abonadas en forma independiente del Derecho de Conexión, facturándose en este caso el valor de los materiales utilizados. Queda prohibida toda conexión a otros aparatos televisivos, que no sea hecha con materiales ni personal de la Permisionaria.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>
+***Para adherirse al Sistema el Usuario abonará un “DERECHO DE CONEXIÓN”, conjuntamente con una tarifa mensual de abono, la que será pagadera del 1 al 10 de cada mes adelantado, dicho importe podrá ser modificado por La Empresa en cualquier momento y de acuerdo a los parámetros que se fijen oportunamente.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>****En caso de falta de pago por parte de un Usuario de dos (2) facturas de abono mensuales y consecutivas, La Empresa queda facultada para interrumpir la prestación a su cargo, remover y retirar los elementos de conexión, los que son y permanecen de propiedad de La Empresa, y para cuya extracción el Usuario presta desde ya la pertinente autorización, incluso con acceso a ese fin al domicilio para efectuar la  desconexión. La reconexión será facturada como nueva conexión; a las tarifas vigentes a la fecha de su nueva solicitud, siempre y cuando haya sido cancelada la totalidad de la deuda pendiente</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>.
+*****La Empresa, por medio de personal debidamente identificado, tendrá acceso domiciliario para la instalación, inspección y mantenimiento del Servicio a conectar y conectado, declinando toda responsabilidad por la intervención de personas ajenas y la utilización de materiales no homologados. Asimismo La Empresa declina responsabilidades por defectos de recepción o mal funcionamiento de Televisores, como así también, por falta de servicio por causas ajenas a la misma, como ser: Problemas de emisión satelital, caídas de líneas de tensión, caída o rotura de postes de energía y/o teléfono, corte del suministro de energía eléctrica, etc., que afecten nuestras líneas y que no eximen de sus obligaciones de pago al Usuario </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Usu_Nombre.Value, "Usuarios")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>
+******La Empresa se compromete a conectar el Servicio en el término de diez (10) días, a partir de la fecha de suscripta la presente Propuesta de Adhesión, vencido dicho plazo la misma se tomará otro plazo de cinco (5) días, cuando la demora sea por causa de fuerza mayor y/o devolverá el dinero recibido con más el interés estipulado para operaciones de redescuento a treinta días en el Banco de la Nación Argentina .
+*******La Empresa se reserva el derecho de verificar en cualquier momento el estado de las instalaciones domiciliarias, autorizando por la presente el Usuario, a permitir y facilitar la labor del personal autorizado al efecto. En caso de anomalías o negativas al acceso, La Empresa podrá anular la conexión, sin derecho el Usuario a reclamo alguno por los importes abonados. Asimismo, el abono será revocable a sola voluntad del Usuario, mediante el preaviso de un mes, en las oficinas de La Empresa. El Usuario autoriza por la presente el acceso al personal de La Empresa a los efectos de retirar los materiales de conexión, siendo responsable de los deterioros y/o faltantes de los mismos ….
+********La Empresa se reserva el derecho a anexar nuevos servicios complementarios o emitir nuevos canales de televisión de aire o cable, e incrementar el abono mensual por dicho complemento.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Nombre Apellido: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Usu_Nombre.Value, "Usuarios")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">   </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Usu_Apellido.Value, "Usuarios")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>
+Dirección:  </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Calle.Value, "UsuarioLocacion")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Altura.Value, "UsuarioLocacion")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>
+Tel.: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Usu_Telefono_1.Value, "Usuarios")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>
+E-mail: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Usu_Correo.Value, "Usuarios")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>
+Fecha de Nacimiento: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Usu_Nacimiento.Value, "Usuarios")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>
+DNI: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Usu_Dni_Numero.Value, "Usuarios")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>
+Módulo:............................... Manzana: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Manzana.Value, "UsuarioLocacion")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value> Bocas de suministro: 1
+OBSERVACIONES: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Observaciones.Value, "UsuarioLocacion")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>
+El </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Globals!ExecutionTime</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">
+</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>2.27224cm</Top>
+        <Left>0.81703cm</Left>
+        <Height>23.1425cm</Height>
+        <Width>19.38042cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>264.23958mm</Height>
+    <Style />
+  </Body>
+  <Width>210mm</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="dsInformes">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>a80028bf-8e00-4653-9233-067886ef5a1d</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Usuarios">
+      <Query>
+        <DataSourceName>dsInformes</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Usu_Apellido">
+          <DataField>Usu_Apellido</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Nombre">
+          <DataField>Usu_Nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Calle">
+          <DataField>Usu_Calle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Altura">
+          <DataField>Usu_Altura</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Entre_calle">
+          <DataField>Usu_Entre_calle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Y_Calle">
+          <DataField>Usu_Y_Calle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Localidad">
+          <DataField>Usu_Localidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Piso">
+          <DataField>Usu_Piso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_depto">
+          <DataField>Usu_depto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Provincia">
+          <DataField>Usu_Provincia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Telefono_1">
+          <DataField>Usu_Telefono_1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Telefono_2">
+          <DataField>Usu_Telefono_2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Codigo_Postal">
+          <DataField>Usu_Codigo_Postal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Dni">
+          <DataField>Usu_Dni</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Dni_Numero">
+          <DataField>Usu_Dni_Numero</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Condicion_Iva">
+          <DataField>Usu_Condicion_Iva</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Calle_Fiscal">
+          <DataField>Usu_Calle_Fiscal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Localidad_Fiscal">
+          <DataField>Usu_Localidad_Fiscal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Correo">
+          <DataField>Usu_Correo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Profesion">
+          <DataField>Usu_Profesion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Manzana">
+          <DataField>Usu_Manzana</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Parcela">
+          <DataField>Usu_Parcela</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Observacion">
+          <DataField>Usu_Observacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Razon_Social">
+          <DataField>Usu_Razon_Social</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Codigo">
+          <DataField>Usu_Codigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Usu_Nacimiento">
+          <DataField>Usu_Nacimiento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsInformes</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\hhome\Desktop\VideoCable\CapaPresentacion\Impresiones\dsInformes.xsd</rd:SchemaPath>
+        <rd:TableName>Usuarios</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="PartesDeTrabajo">
+      <Query>
+        <DataSourceName>dsInformes</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Numero">
+          <DataField>Numero</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Estado">
+          <DataField>Estado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Locacion">
+          <DataField>Locacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tecnico">
+          <DataField>Tecnico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaReclamo">
+          <DataField>FechaReclamo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaProgramacion">
+          <DataField>FechaProgramacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaRealizacion">
+          <DataField>FechaRealizacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ParteOperacion">
+          <DataField>ParteOperacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Operador">
+          <DataField>Operador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Area">
+          <DataField>Area</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Solicitud">
+          <DataField>Solicitud</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Solucion">
+          <DataField>Solucion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id_usuarios">
+          <DataField>id_usuarios</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Id_Locacion">
+          <DataField>Id_Locacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Id_Locacion_Destino">
+          <DataField>Id_Locacion_Destino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Id_Operacion">
+          <DataField>Id_Operacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsInformes</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\hhome\Desktop\VideoCable\CapaPresentacion\Impresiones\dsInformes.xsd</rd:SchemaPath>
+        <rd:TableName>PartesDeTrabajo</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="UsuarioLocacion">
+      <Query>
+        <DataSourceName>dsInformes</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Id">
+          <DataField>Id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Calle">
+          <DataField>Calle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Altura">
+          <DataField>Altura</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Piso">
+          <DataField>Piso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Depto">
+          <DataField>Depto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="limiteCalle1">
+          <DataField>limiteCalle1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="limiteCalle2">
+          <DataField>limiteCalle2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Telefono1">
+          <DataField>Telefono1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Telefono2">
+          <DataField>Telefono2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Localidad">
+          <DataField>Localidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Observaciones">
+          <DataField>Observaciones</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Manzana">
+          <DataField>Manzana</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Parcela">
+          <DataField>Parcela</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsInformes</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\hhome\Desktop\VideoCable\CapaPresentacion\Impresiones\dsInformes.xsd</rd:SchemaPath>
+        <rd:TableName>UsuarioLocacion</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>ef515ed7-2a09-4a95-b881-6f519b2f88a1</rd:ReportID>
+</Report>

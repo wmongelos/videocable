@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C51AB95F-0F9E-4C1C-8387-DF7EBDC5DC3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaNegocios</RootNamespace>
+    <AssemblyName>CapaNegocios</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GMap.NET.Core, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Afip.cs" />
+    <Compile Include="Agenda_Encabezado.cs" />
+    <Compile Include="Aplicaciones_Externas.cs" />
+    <Compile Include="Aplicaciones_Externas_Excepciones.cs" />
+    <Compile Include="Articulos.cs" />
+    <Compile Include="Articulos_Mov.cs" />
+    <Compile Include="Articulos_Mov_Det.cs" />
+    <Compile Include="Articulos_Rubros.cs" />
+    <Compile Include="Barrios.cs" />
+    <Compile Include="Bonificaciones.cs" />
+    <Compile Include="Bonificaciones_Aplicacion.cs" />
+    <Compile Include="Bonificaciones_Aplicacion_Condiciones.cs" />
+    <Compile Include="Bonificaciones_Condiciones_Porcentaje.cs" />
+    <Compile Include="Borrados.cs" />
+    <Compile Include="Caja_Diaria.cs" />
+    <Compile Include="Caja_Egreso.cs" />
+    <Compile Include="Caja_General.cs" />
+    <Compile Include="Cambio_Servicio.cs" />
+    <Compile Include="Cass.cs" />
+    <Compile Include="Comprobantes_Compras.cs" />
+    <Compile Include="Comprobantes_Compras_Det.cs" />
+    <Compile Include="Comprobantes_Detalle.cs" />
+    <Compile Include="Comprobantes_Detalle_Impresion.cs" />
+    <Compile Include="Comprobantes_Habilitados.cs" />
+    <Compile Include="Comprobantes_Iva.cs" />
+    <Compile Include="Comprobante_impresion.cs" />
+    <Compile Include="Contrato.cs" />
+    <Compile Include="CuentaCorrienteInforme.cs" />
+    <Compile Include="Entidades.cs" />
+    <Compile Include="Equipos_Estados.cs" />
+    <Compile Include="Equipos_Tarjetas.cs" />
+    <Compile Include="Facturacion.cs" />
+    <Compile Include="Facturacion_Mensual_Historial.cs" />
+    <Compile Include="Formas_de_pago.cs" />
+    <Compile Include="Formulario.cs" />
+    <Compile Include="Funcion.cs" />
+    <Compile Include="GPS.cs" />
+    <Compile Include="Impuestos.cs" />
+    <Compile Include="InformeCajasMensual.cs" />
+    <Compile Include="Informes_Contables.cs" />
+    <Compile Include="Informes_Servicios.cs" />
+    <Compile Include="Isp.cs" />
+    <Compile Include="Iva_Alicuotas.cs" />
+    <Compile Include="Iva_Ventas.cs" />
+    <Compile Include="Iva_Ventas_Qr.cs" />
+    <Compile Include="Json.cs" />
+    <Compile Include="JsonAfip.cs" />
+    <Compile Include="Localidades_Calles.cs" />
+    <Compile Include="Comprobantes.cs" />
+    <Compile Include="Configuracion.cs" />
+    <Compile Include="Equipos.cs" />
+    <Compile Include="LogTabla.cs" />
+    <Compile Include="Log_Acciones.cs" />
+    <Compile Include="Lotes.cs" />
+    <Compile Include="Manzanas.cs" />
+    <Compile Include="Manzanas_Calles.cs" />
+    <Compile Include="Mapas\GMarkerGoogleDatos.cs" />
+    <Compile Include="Mapas\JsonGeocodeAPI.cs" />
+    <Compile Include="Mapas\Mapas.cs" />
+    <Compile Include="Mapas\Poligono_Personal_Area.cs" />
+    <Compile Include="Modalidad_Facturacion.cs" />
+    <Compile Include="Moviles.cs" />
+    <Compile Include="Notificaciones.cs" />
+    <Compile Include="Notificaciones_Adjuntos.cs" />
+    <Compile Include="Notificaciones_Destinatarios.cs" />
+    <Compile Include="Notificaciones_Destinatarios_Aut.cs" />
+    <Compile Include="Objetos.cs" />
+    <Compile Include="Operaciones_Condiciones_Rel.cs" />
+    <Compile Include="Operaciones_Condiciones.cs" />
+    <Compile Include="Organismos.cs" />
+    <Compile Include="Organismos_Subservicios_Relacion.cs" />
+    <Compile Include="PagosExternos\Bapro\BaproPagos.cs" />
+    <Compile Include="PagosExternos\CaptarPagos\CaptarPagosImplement.cs" />
+    <Compile Include="PagosExternos\ConfiguracionPagos.cs" />
+    <Compile Include="PagosExternos\MercadoPagoCh\MPCh.cs" />
+    <Compile Include="PagosExternos\PagoExterno.cs" />
+    <Compile Include="Panel_Tareas\Procesos.cs" />
+    <Compile Include="Panel_Tareas\Procesos_Automaticos.cs" />
+    <Compile Include="Panel_Tareas\Procesos_Ejecucion.cs" />
+    <Compile Include="Panel_Tareas\Procesos_Ejecucion_Lotes.cs" />
+    <Compile Include="Panel_Tareas\Procesos_Periodos.cs" />
+    <Compile Include="Partes_Equipos.cs" />
+    <Compile Include="Partes_Estados.cs" />
+    <Compile Include="Partes_Infraestructura.cs" />
+    <Compile Include="Partes_Solicitudes.cs" />
+    <Compile Include="Equipos_Tipos.cs" />
+    <Compile Include="Equipos_Modelos.cs" />
+    <Compile Include="Equipos_Marcas.cs" />
+    <Compile Include="Partes.cs" />
+    <Compile Include="Bonificaciones_Especiales.cs" />
+    <Compile Include="Partes_Historial.cs" />
+    <Compile Include="Partes_Informes.cs" />
+    <Compile Include="Partes_Soluciones.cs" />
+    <Compile Include="Partes_Usuarios_Servicios.cs" />
+    <Compile Include="Parte_Observacion.cs" />
+    <Compile Include="Percepciones.cs" />
+    <Compile Include="Personal_Roles.cs" />
+    <Compile Include="Plasticos.cs" />
+    <Compile Include="Plasticos_Usuarios.cs" />
+    <Compile Include="PlataformasPagos.cs" />
+    <Compile Include="Presentacion_Debitos.cs" />
+    <Compile Include="Presentacion_Plasticos.cs" />
+    <Compile Include="Presentacion_Usuarios_Servicios.cs" />
+    <Compile Include="Panel_Tareas\Procesos_Configuracion.cs" />
+    <Compile Include="Proveedores.cs" />
+    <Compile Include="Punitorio.cs" />
+    <Compile Include="Puntos_Cobros.cs" />
+    <Compile Include="Puntos_Venta.cs" />
+    <Compile Include="Puntos_Venta_Comp.cs" />
+    <Compile Include="Roles_Permisos.cs" />
+    <Compile Include="Scripts.cs" />
+    <Compile Include="Servicios_Categorias.cs" />
+    <Compile Include="Servicios_Condiciones.cs" />
+    <Compile Include="Servicios_Estados_Historial.cs" />
+    <Compile Include="Servicios_Grupos.cs" />
+    <Compile Include="Servicios_Informes.cs" />
+    <Compile Include="Servicios_Ip_Fijas.cs" />
+    <Compile Include="Servicios_Tarifas_Sub_Esp.cs" />
+    <Compile Include="Servicios_Tipos.cs" />
+    <Compile Include="Servicios_Velocidades.cs" />
+    <Compile Include="Comprobantes_Tipo.cs" />
+    <Compile Include="Tablas.cs" />
+    <Compile Include="Tarifas.cs" />
+    <Compile Include="Tecnologias_Tipos.cs" />
+    <Compile Include="TipoComprobantes.cs" />
+    <Compile Include="Tipo_Facturacion.cs" />
+    <Compile Include="Updates.cs" />
+    <Compile Include="Usuarios.cs" />
+    <Compile Include="UsuariosTipos.cs" />
+    <Compile Include="Usuarios_Avisos.cs" />
+    <Compile Include="Usuarios_CtaCte.cs" />
+    <Compile Include="Usuarios_CtaCte_Det.cs" />
+    <Compile Include="Usuarios_Ctacte_Det_Extra.cs" />
+    <Compile Include="Usuarios_CtaCte_Recibos.cs" />
+    <Compile Include="Usuarios_Dom_Fiscal.cs" />
+    <Compile Include="Usuarios_Locaciones.cs" />
+    <Compile Include="Usuarios_Locaciones_Uf.cs" />
+    <Compile Include="Usuarios_Profesiones.cs" />
+    <Compile Include="Provincias.cs" />
+    <Compile Include="Localidades.cs" />
+    <Compile Include="Personal.cs" />
+    <Compile Include="Personal_Areas.cs" />
+    <Compile Include="Servicios.cs" />
+    <Compile Include="Servicios_Sub.cs" />
+    <Compile Include="Servicios_Tarifas.cs" />
+    <Compile Include="Servicios_Tarifas_Sub.cs" />
+    <Compile Include="Usuarios_Saldos_Locacion.cs" />
+    <Compile Include="Usuarios_Servicios.cs" />
+    <Compile Include="Usuarios_Servicios_Equipos.cs" />
+    <Compile Include="Usuarios_Servicios_Novedades.cs" />
+    <Compile Include="Usuarios_Tipodoc.cs" />
+    <Compile Include="Zonas.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{99720ed5-2d65-48c7-94ff-d26739408a5a}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PagosExternos\CapaPagosExternos.csproj">
+      <Project>{c702f1d3-5b08-4f20-89ec-c4c6ee1f0f44}</Project>
+      <Name>CapaPagosExternos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="FEAFIPLib">
+      <Guid>{DAE2CF79-E2C1-40C0-90CD-43C9688F108E}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
